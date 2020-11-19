@@ -7,31 +7,31 @@ events {
 
 http {
   upstream stf_app {
-    server __IP_ADDRESS__:3100 max_fails=0;
+    server 127.0.0.1:3100 max_fails=0;
   }
 
   upstream stf_auth {
-    server __IP_ADDRESS__:3200 max_fails=0;
+    server 127.0.0.1:3200 max_fails=0;
   }
 
   upstream stf_storage_apk {
-    server __IP_ADDRESS__:3300 max_fails=0;
+    server 127.0.0.1:3300 max_fails=0;
   }
 
   upstream stf_storage_image {
-    server __IP_ADDRESS__:3400 max_fails=0;
+    server 127.0.0.1:3400 max_fails=0;
   }
 
   upstream stf_storage {
-    server __IP_ADDRESS__:3500 max_fails=0;
+    server 127.0.0.1:3500 max_fails=0;
   }
 
   upstream stf_websocket {
-    server __IP_ADDRESS__:3600 max_fails=0;
+    server 127.0.0.1:3600 max_fails=0;
   }
 
   upstream stf_api {
-    server __IP_ADDRESS__:3700 max_fails=0;
+    server 127.0.0.1:3700 max_fails=0;
   }
 
   types {
