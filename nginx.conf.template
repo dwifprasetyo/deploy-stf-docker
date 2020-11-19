@@ -58,7 +58,7 @@ http {
 
     # Handle stf-provider@floor4.service
     location ~ "^/d/floor4/([^/]+)/(?<port>[0-9]{5})/$" {
-      proxy_pass http://__IP_ADDRESS__:$port/;
+      proxy_pass http://127.0.0.1:$port/;
       proxy_http_version 1.1;
       proxy_set_header Upgrade $http_upgrade;
       proxy_set_header Connection $connection_upgrade;
